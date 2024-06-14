@@ -4,7 +4,7 @@ export default function Header() {
       <header>
         <div className="rounded-4xl overflow-hidden mx-4">
           <div className="text-center p-2">
-            <h1 className="text-lg ">Sudanese Kitchen</h1>
+            <h1 className="text-lg font-Alkalami"> التُّكل السُّوداني</h1>
           </div>
           <div className="relative ">
             <div className="after:content-[''] after:w-full after:h-full after:absolute after:top-0 after:bg-neutral-900/50 after:rounded-xl after:overflow-hidden">
