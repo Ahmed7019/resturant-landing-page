@@ -9,7 +9,7 @@ export default {
     extend: {
       fontFamily: {
         Alkalami: ["Alkalami", "serif"],
-        playFair: ["Playfair Display", "serif"],
+        poppins: ["Poppins", "san-serif"],
       },
     },
   },

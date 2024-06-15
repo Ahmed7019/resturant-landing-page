@@ -57,7 +57,7 @@ export default function MainSection() {
           </div>
         </section>
         <section className="my-2">
-          <h2 className="font-bold text-xl font-playFair">Sudanese Kitchen</h2>
+          <h2 className="font-bold text-xl font-poppins">Sudanese Kitchen</h2>
           <p className="text-sm text-slate-700 ">
             The Sudanese kitchen is a vibrant and diverse culinary tradition
             that reflects the rich cultural heritage and varied geography of
