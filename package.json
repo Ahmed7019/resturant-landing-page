@@ -2,11 +2,11 @@
   "name": "resturant-landing-page",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "homepage": "https://Ahmed7019.github.io/resturant-landing-page",
+  "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
