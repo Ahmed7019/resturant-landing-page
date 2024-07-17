@@ -64,7 +64,16 @@ export default function MainSection() {
       `Sudanese Agashe is a popular street food in Sudan, characterized by thinly sliced beef, chicken, or fish, cut and butterflied before being skewered. The meat is then coated with a dry blend of crushed peanuts, hot pepper, and other spices.`
     );
 
-  let myMeals = [fulMedames, asida, tamayya, shayiah, kisra,bamia, gheema, agashe];
+  let myMeals = [
+    fulMedames,
+    asida,
+    tamayya,
+    shayiah,
+    kisra,
+    bamia,
+    gheema,
+    agashe,
+  ];
 
   const mealCard = myMeals.map((meal, index) => (
     <MealCards
