@@ -33,6 +33,24 @@ export default function MainSection() {
       "Gheema (Potatoes with meat and vegetables",
       `The potatoes are deep fried and mixed into the beef and vegetables instead of mashed on top. Different, delicious and comforting all at once.`
     ),
+    asida = new Meal(
+      "https://imgs.search.brave.com/3vSSeI23sidQAXXcRpP0qBYqmeW2npuJz5Vm7XHaR0Q/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hbGxh/Ym91dHRoZWNvb2tz/LmNvLnVrL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIzLzA4L1Nh/bGhhTFJfMzguanBn",
+      "Asida",
+      "Asida",
+      `Sudanese asida is a traditional Sudanese dish that holds cultural significance in Sudan. It is a type of porridge made from durum wheat flour or cornmeal. Asida is a staple food in Sudan and is commonly consumed for breakfast or as a main course.`
+    ),
+    kisra = new Meal(
+      "https://imgs.search.brave.com/38XdMpvup-IkYHyVVs9JgxAlZJVoXclmWa6pPRAcoZ4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGFzdGVvZnNvdXRo/c3VkYW4uY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE2LzA2/L01vbG9raGlhLXNl/cnZlZC13aXRoLUlu/amVyYS5qcGc",
+      "kisra",
+      "Kisra",
+      `A type of thin, fermented bread made from sorghum flour. It is a staple in Sudanese cuisine and is often served with various stews and sauces.`
+    ),
+    shayiah = new Meal(
+      "https://imgs.search.brave.com/_oZEpKekTKp9wWSNupCu9aigCBm6mrhYu0A7iWkn9s0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90YXN0/ZW9mc291dGhzdWRh/bi5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMTcvMDIvUm9h/c3RlZC1sYW1iLVNo/YWl5YS5qcGc",
+      "shayiah",
+      "Shayyah",
+      `A delicious Sudanese meat stew made with lamb or beef, cooked with a blend of spices, onions, and tomatoes.`
+    ),
     agashe = new Meal(
       "https://imgs.search.brave.com/ctZbc92RSYlaoIvSREqlzZx_Up1eXqWb1nekpANkFjM/rs:fit:500:0:0:0/g:ce/aHR0cDovLzUwMHdv/cmRzbWFnLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOC8x/Mi9BZ2FzaGUtZTE1/NDM4MjQ2NTg0ODUu/anBn",
       "Agashe",
@@ -40,7 +58,7 @@ export default function MainSection() {
       `Sudanese Agashe is a popular street food in Sudan, characterized by thinly sliced beef, chicken, or fish, cut and butterflied before being skewered. The meat is then coated with a dry blend of crushed peanuts, hot pepper, and other spices.`
     );
 
-  let myMeals = [fulMedames, tamayya, gheema, agashe];
+  let myMeals = [fulMedames, asida, tamayya, shayiah,kisra, gheema, agashe];
 
   const mealCard = myMeals.map((meal, index) => (
     <MealCards
@@ -70,7 +88,7 @@ Sudanese kahk is often enjoyed as a sweet treat or as a snack. It is commonly se
 
 These biscuits are often homemade, prepared with simple ingredients such as flour, butter or margarine, sugar, and sometimes flavored with vanilla or other extracts. They are baked until golden brown, resulting in a crispy texture that pairs well with tea.`
     );
-  let myDesserts = [kahk,biscuit];
+  let myDesserts = [kahk, biscuit];
   const dessertCard = myDesserts.map((meal, index) => (
     <MealCards
       key={index}
