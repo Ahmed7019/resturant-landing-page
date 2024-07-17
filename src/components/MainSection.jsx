@@ -52,10 +52,26 @@ export default function MainSection() {
     />
   ));
 
-  let kahk = new Meal();
-  
-  let myDesserts = [];
-  const dessertCard = myMeals.map((meal, index) => (
+  let kahk = new Meal(
+      "https://imgs.search.brave.com/LrMwRWGMT3RdqjXXSpnN3xPV69ygi1UTY66OIesi4tw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90cmF2/ZWxmb29kYXRsYXMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIzLzA0L0thaGst/RkkuanBn",
+      "kahk",
+      "Kahk",
+      `Sudanese kahk is a delightful dessert that is popular in Sudan and other parts of the Middle East. It is a type of cookie that typically has a round shape and a golden-brown color. The kahk is known for its unique texture, with a crispy exterior and a soft, chewy interior.
+
+One of the distinctive features of Sudanese kahk is the sprinkle of sesame seeds on top, which adds a delightful nutty flavor and a slight crunch. The sesame seeds not only enhance the taste but also contribute to the visual appeal of the dessert.
+
+Sudanese kahk is often enjoyed as a sweet treat or as a snack. It is commonly served during special occasions, celebrations, and gatherings. The flavorful combination of the cookie's texture and the added sesame seeds make it a beloved dessert among locals and visitors alike.`
+    ),
+    biscuit = new Meal(
+      "https://imgs.search.brave.com/VzdExM3Ejo3CW1A_JPTpXO9j4wyEB3JM3rS5JoM36R8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tb2Rv/My5jb20vdGh1bWJz/L2ZpdDYzMHgzMDAv/MTU2MTA0LzE0OTU1/NTY1MzQvJUQ4JUI5/JUQ5JTg1JUQ5JTg0/XyVEOCVBOCVEOCVC/MyVEOSU4MyVEOSU4/OCVEOSU4QSVEOCVB/QV8lRDglQTclRDkl/ODQlRDklODYlRDgl/QjQlRDglQTclRDgl/QUYlRDglQjFfJUQ4/JUE3JUQ5JTg0JUQ4/JUIzJUQ5JTg4JUQ4/JUFGJUQ4JUE3JUQ5/JTg2JUQ5JThBLmpw/Zw",
+      "tea biscuit",
+      "Tea Biscuit",
+      `Sudanese biscuits for tea are a popular accompaniment to tea in Sudanese culture. They are typically served during tea time or as a sweet treat for guests. Sudanese biscuits come in various shapes and flavors, offering a delightful range of options to enjoy with a cup of tea.
+
+These biscuits are often homemade, prepared with simple ingredients such as flour, butter or margarine, sugar, and sometimes flavored with vanilla or other extracts. They are baked until golden brown, resulting in a crispy texture that pairs well with tea.`
+    );
+  let myDesserts = [kahk,biscuit];
+  const dessertCard = myDesserts.map((meal, index) => (
     <MealCards
       key={index}
       source={`${meal.source}`}
@@ -97,7 +113,12 @@ export default function MainSection() {
         </section>
 
         <section className="flex flex-col justify-center items-center my-4">
-          <p className="font-bold py-2">Discover the Rich Flavors of Sudanese Kitchen Desserts</p>
+          <p className="w-full underline decoration-wavy text-3xl mx-4 text-orange-400">
+            ____________________________
+          </p>
+          <p className="font-bold text-center py-2">
+            Discover the Rich Flavors of Sudanese Kitchen Desserts
+          </p>
           <div className="flex flex-col justify-center items-center gap-y-8">
             {dessertCard}
           </div>
