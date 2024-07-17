@@ -45,6 +45,12 @@ export default function MainSection() {
       "Kisra",
       `A type of thin, fermented bread made from sorghum flour. It is a staple in Sudanese cuisine and is often served with various stews and sauces.`
     ),
+    bamia = new Meal(
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Bamia-Ocras_tomate_%28cropped%29.JPG/220px-Bamia-Ocras_tomate_%28cropped%29.JPG",
+      "bamia",
+      "Bamia",
+      `A flavorful okra stew cooked with meat (such as lamb or beef), tomatoes, onions, and spices.`
+    ),
     shayiah = new Meal(
       "https://imgs.search.brave.com/_oZEpKekTKp9wWSNupCu9aigCBm6mrhYu0A7iWkn9s0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90YXN0/ZW9mc291dGhzdWRh/bi5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMTcvMDIvUm9h/c3RlZC1sYW1iLVNo/YWl5YS5qcGc",
       "shayiah",
@@ -58,7 +64,7 @@ export default function MainSection() {
       `Sudanese Agashe is a popular street food in Sudan, characterized by thinly sliced beef, chicken, or fish, cut and butterflied before being skewered. The meat is then coated with a dry blend of crushed peanuts, hot pepper, and other spices.`
     );
 
-  let myMeals = [fulMedames, asida, tamayya, shayiah,kisra, gheema, agashe];
+  let myMeals = [fulMedames, asida, tamayya, shayiah, kisra,bamia, gheema, agashe];
 
   const mealCard = myMeals.map((meal, index) => (
     <MealCards
