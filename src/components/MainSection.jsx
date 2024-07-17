@@ -32,9 +32,15 @@ export default function MainSection() {
       "Gheema",
       "Gheema (Potatoes with meat and vegetables",
       `The potatoes are deep fried and mixed into the beef and vegetables instead of mashed on top. Different, delicious and comforting all at once.`
+    ),
+    agashe = new Meal(
+      "https://imgs.search.brave.com/ctZbc92RSYlaoIvSREqlzZx_Up1eXqWb1nekpANkFjM/rs:fit:500:0:0:0/g:ce/aHR0cDovLzUwMHdv/cmRzbWFnLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOC8x/Mi9BZ2FzaGUtZTE1/NDM4MjQ2NTg0ODUu/anBn",
+      "Agashe",
+      "Agashe",
+      `Sudanese Agashe is a popular street food in Sudan, characterized by thinly sliced beef, chicken, or fish, cut and butterflied before being skewered. The meat is then coated with a dry blend of crushed peanuts, hot pepper, and other spices.`
     );
 
-  let myMeals = [fulMedames, tamayya, gheema];
+  let myMeals = [fulMedames, tamayya, gheema, agashe];
 
   const mealCard = myMeals.map((meal, index) => (
     <MealCards
@@ -45,6 +51,22 @@ export default function MainSection() {
       description={`${meal.description}`}
     />
   ));
+
+  let kahk = new Meal();
+  
+  let myDesserts = [];
+  const dessertCard = myMeals.map((meal, index) => (
+    <MealCards
+      key={index}
+      source={`${meal.source}`}
+      alt={`${meal.alt}`}
+      mealName={`${meal.title}`}
+      description={`${meal.description}`}
+    />
+  ));
+
+  // Desserts
+
   return (
     <main>
       <div className="m-4">
@@ -71,6 +93,13 @@ export default function MainSection() {
           <p className="font-bold py-2">Popular recepies</p>
           <div className="flex flex-col justify-center items-center gap-y-8">
             {mealCard}
+          </div>
+        </section>
+
+        <section className="flex flex-col justify-center items-center my-4">
+          <p className="font-bold py-2">Discover the Rich Flavors of Sudanese Kitchen Desserts</p>
+          <div className="flex flex-col justify-center items-center gap-y-8">
+            {dessertCard}
           </div>
         </section>
       </div>
